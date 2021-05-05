@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="author" content="Charmi Prajapati">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/main.css">
+     <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+     <script src="html5shiv.js"></script>
+      <!-- the 1.8.3 jQuery library at CDN -->
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+  <style type="text/css">
+
+.container {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 48rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #373d51;
+    padding: 1.3rem;
+    margin: 0;
+}
+
+.accordion a {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+    cursor: pointer;
+    color: #ff5353;
+}
+
+.accordion a:hover::after {
+    border: 1px solid #ff5353;
+}
+
+.accordion a.active {
+    color: #ff5353;
+    border-bottom: 1px solid #ff5353;
+}
+
+.accordion a::after {
+    font-family: 'Ionicons';
+    content: '\f218';
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 1rem;
+    color: #7288a2;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #7288a2;
+    text-align: center;
+}
+
+.accordion a.active::after {
+    font-family: 'Ionicons';
+    content: '\f209';
+    color: #ff5353;
+    border: 1px solid #ff5353;
+}
+
+.accordion .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.accordion .content.active {
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
+}
+
+  </style>
+
+<script type="text/javascript">
+    function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+$(document).ready(function () {
+const items = document.querySelectorAll(".accordion a");
+function toggleAccordion() {
+    this.classList.toggle('active');
+    this.nextElementSibling.classList.toggle('active');
+}
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+});
+    </script>
+
+</head>
+<body>
+<header >
+	<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <a href="index.html">Home</a>
+    <a href="list.html">List</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+</div>
+<h1 ><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> Fashion Factory</h1>
+</header>
+
+<main >
+          <header>
+
+        </header>
+        <div class="container">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <a>    My discount code is not working, what do I do? </a>
+                    <div class="content">
+                        <p>We are sorry you are having trouble checking out, please note that some discount codes require users to create an account on the site and be logged in upon check out to utilize the discount code.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <a>Are trips physically demanding?</a>
+                    <div class="content">
+                        <p>Want to lie in a hammock and not move until cocktail hour? We’ve got a trip for that. Want to power up the side of mountain at high altitude? We’ve also got a trip for that. To determine what type of trip suits you best, each of our trips comes with a Physical Rating to let you know how physically demanding it is… or isn’t. </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <a>Where are your products shipped from?</a>
+                    <div class="content">
+                        <p>We ship from 7 warehouses around the US. With so many shipping centers across the country, we provide some of the fastest, most affordable delivery options in the industry. </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <a>Are your trips guaranteed to depart?</a>
+                    <div class="content">
+                        <p>The vast majority of our small group adventures are guaranteed to depart. That means that once you book your trip it’s confirmed to run, regardless of how many other travellers have booked. You can easily tell which departures are guaranteed by looking for 'guaranteed departure' next to your chosen travel date.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <a> Can you ship internationally or process international credit cards?</a>
+                    <div class="content">
+                        <p>At this time we do not offer international shipping and cannot accept credit cards from outside of Canada. </p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <a>  How long will it take me to get my order?</a>
+                    <div class="content">
+                        <p>For standard shipping, you should receive your order within 4-5 business days. </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <a> Why did I only receive part of my order?</a>
+                    <div class="content">
+                        <p>Don't worry, it's on its way! While we do our best to ship all orders in one package, there are times when orders will ship from multiple warehouses. If you did not receive multiple tracking numbers, please reach out to our customer service team for assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+<footer class="footer">
+     <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="list.html">List</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+     </ul>
+       <center> <p>JavaScript Final Web App Project &copy; 2020 by Charmi Prajapati</p> </center>
+    </footer>
+
+
+</html>
