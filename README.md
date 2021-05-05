@@ -1,2 +1,2 @@
 # JavaScriptWebsite
-A website purely based on javascript
+A website purely made using javascript
